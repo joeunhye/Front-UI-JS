@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Guide</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script defer src="./js/layout.js"></script>
+    <script defer src="./js/header.js"></script>
+    <script defer src="./js/tab.js"></script>
+    <script defer src="./js/accordion.js"></script>
+    <style>
+        /*프론트 퍼블 가이드 내에서만 사용*/
+        .conT1 {
+            margin-bottom: 28px;
+        }
+
+        .sub-txt {
+            margin: 12px 0;
+        }
+
+        .link-list {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .link-list li {
+            flex: 1;
+            margin: 0 3px;
+        }
+
+        .link-list li a {
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border: 1px solid #8d63d9;
+            color: #8d63d9;
+        }
+
+        .subtxt-list {
+            margin: 15px 0;
+        }
+
+        .subtxt-list li {
+            margin: 8px 0;
+        }
+
+        .guide-box {
+            margin-bottom: 50px;
+        }
+
+        .code-sample {
+            margin: 10px 0 0;
+        }
+
+        .code-sample p {
+            margin: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont-layout">
+        <div class="cont-layout-in">
+            <h1 class="conT1">Front-UI-JS</h1>
+            <ul class="link-list">
+                <li><a href="#headerGuide">Header</a></li>
+                <li><a href="#tabGuide">Tab</a></li>
+                <li><a href="#accordionGuide">Accordion</a></li>
+                <li><a href="#popupGuide">Popup</a></li>
+            </ul>
+
+            <!--HEADER-->
+            <h1 class="conT3" id="headerGuide">Header</h1>
+            <div class="guide-box">
+                <header id="header">
+                    <nav class="navbar">
+                        <h1><a href="/" class="navbar-brand">LOGO</a></h1>
+                        <ul class="navbar-menu">
+                            <li class="navbar-menu-item" data-menu="menu-1">
+                                <a href="javascript:void(0)">menu-1</a>
+                                <div class="navbar-submenu-wrapper" id="menu-1">
+                                    <ul class="navbar-submenu">
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-1</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-2</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navbar-menu-item" data-menu="menu-2">
+                                <a href="javascript:void(0)">menu-2</a>
+                                <div class="navbar-submenu-wrapper" id="menu-2">
+                                    <ul class="navbar-submenu">
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-1</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-2</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navbar-menu-item" data-menu="menu-3">
+                                <a href="javascript:void(0)">menu-3</a>
+                                <div class="navbar-submenu-wrapper" id="menu-3">
+                                    <ul class="navbar-submenu">
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-1</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-2</a>
+                                        </li>
+                                        <li class="navbar-submenu-item">
+                                            <a href="/">sub-menu-3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <!--TAB STYLE-->
+            <h1 class="conT3" id="tabGuide">Box Tab</h1>
+            <div class="guide-box">
+                <!-- TAB1-->
+                <div class="tab" id="tab1">
+                    <!-- TAB MENU-->
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);">탭제목1</a></li>
+                        <li><a href="javascript:void(0);">탭제목2</a></li>
+                        <li><a href="javascript:void(0);">탭제목3</a></li>
+                    </ul>
+
+                    <!-- TAB CONTENT-->
+                    <section class="tab-contents">
+                        <article class="tab-content on">BOX1</article>
+                        <article class="tab-content">BOX2</article>
+                        <article class="tab-content">BOX3</article>
+                    </section>
+                </div>
+            </div>
+
+            <h1 class="conT3">Line Tab</h1>
+            <div class="guide-box">
+                <!-- TAB2-->
+                <div class="tab line-tab" id="tab2">
+                    <!-- TAB MENU-->
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);">탭제목1</a></li>
+                        <li><a href="javascript:void(0);">탭제목2</a></li>
+                        <li><a href="javascript:void(0);">탭제목3</a></li>
+                    </ul>
+
+                    <!-- TAB CONTENT-->
+                    <section class="tab-contents">
+                        <article class="tab-content on">BOX1</article>
+                        <article class="tab-content">BOX2</article>
+                        <article class="tab-content">BOX3</article>
+                    </section>
+                </div>
+            </div>
+
+            <!--ACCORDION-->
+            <h1 class="conT3" id="accordionGuide">Accordion</h1>
+            <div class="guide-box">
+                <ul class="accordion">
+                    <li class="item">
+                        <a href="javascript:void(0)">London <span class="accIcon"></span></a>
+                        <div class="accordion-cont">London is the capital and largest city of England, the United
+                            Kingdom,
+                            and the European Union. Standing on the River Thames in southeastern England, at the
+                            head of its 50-mile (80 km) estuary leading to the North Sea, London has been a
+                            major settlement for two millennia. </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)">Madrid <span class="accIcon"></span></a>
+                        <div class="accordion-cont">Madrid is the capital of Spain and the largest municipality in both
+                            the Community of Madrid and Spain as a whole. The city has almost 3.2 million
+                            inhabitants and a metropolitan area population of approximately 6.5 million.</div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)">Paris <span class="accIcon"></span></a>
+                        <div class="accordion-cont">Paris is the capital and most populous city of France, with an area
+                            of
+                            105 square kilometres (41 square miles) and a population of 2,206,488. Since the
+                            17th century, Paris has been one of Europe's major centres of finance, commerce,
+                            fashion, science, and the arts.</div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)">Barcelona <span class="accIcon"></span></a>
+                        <div class="accordion-cont">Barcelona is a city in Spain. It is the capital and largest city of
+                            Catalonia, as well as the second most populous municipality of Spain. With a
+                            population of 1.6 million within city limits, its urban area extends to numerous
+                            neighbouring municipalities within the Province of Barcelona and is home to around
+                            4.8 million people.</div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)">Milan <span class="accIcon"></span></a>
+                        <div class="accordion-cont">Milan is a city in northern Italy, capital of Lombardy, and the
+                            second-most populous city in Italy after Rome, with the city proper having a
+                            population of 1,372,810 while its metropolitan area has a population of 3,242,820.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

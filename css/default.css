@@ -1,0 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;/* font: inherit; */vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+a {text-decoration: none;color:#000;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+html,body {position: relative; height:100%; padding:0; margin:0;font-family: 'Noto Sans KR';background-color: #fff;letter-spacing: -0.6px;text-size-adjust: none;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; -o-text-size-adjust: none;}
+button {font-family: 'Noto Sans KR';}
+.skip {width: 0; font-size: 0; text-indent: -9999px; overflow: hidden; height: 0;}
+.pc-hide {display: none;}
+/* .not_scroll{position: fixed;overflow: hidden !important;width: 100%;height: 100%; touch-action:none;touch-action: none;-ms-touch-action: none;} */
+.not_scroll{touch-action: none; -webkit-overflow-scrolling: none;overflow: hidden; overscroll-behavior: none;}
+.not_scroll header {pointer-events: none;}
+.not_scroll .popup-bg {transform: scaleX(1);}
+.not_scroll .triggerBtn {opacity: 0.5;}
+
+input {line-height: inherit; font-family: inherit; font-size: inherit;-webkit-appearance: none; -webkit-border-radius: 0;}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+	 transition: background-color 5000s ease-in-out 0s; -webkit-transition: background-color 9999s ease-out;
+     -webkit-box-shadow: 0 0 0px 1000px white inset !important;}  
+input::placeholder {font-size:14px;color:#888; }
+input:-ms-input-placeholder {font-size:14px;color: #888;}
+input::-webkit-input-placeholder {font-size:14px;color: #888;}
+input:-moz-placeholder {font-size:14px;color: #888;}
+select::-ms-expand {display: none;}
+select {line-height: inherit; font-family: inherit; font-size: inherit;z-index: 1;}
+select {-webkit-appearance: none; -moz-appearance: none;appearance: none;border-radius: 0px;}
+textarea {line-height: inherit; font-family: inherit; font-size: inherit;-webkit-appearance: none;-webkit-border-radius: 0;}
+fieldset {padding: 0; margin: 0;border:none;}
+
+.al {text-align: left;}
+.ar {text-align: right;}
+.ac {text-align: center;}
+.ellipsis1 { max-width:500px; display: block; overflow: hidden; white-space: nowrap; word-break: keep-all;text-overflow: ellipsis;}
+.ellipsis2 {overflow: hidden;text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical;} 
+.ellipsis3 {overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3; -webkit-box-orient: vertical;} 

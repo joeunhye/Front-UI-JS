@@ -1,0 +1,161 @@
+/*TAB*/
+.tab {
+	display: block;
+	overflow: hidden;
+	border-right: 0;
+}
+.tab > ul {
+	display: flex;
+	position: relative;
+}
+.tab > ul:before {
+	display: none;
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	bottom: 0px;
+	height: 1px;
+	background-color: #8d63d9;
+	z-index: 1;
+}
+.tab > ul > li {
+	flex: 1;
+}
+.tab > ul > li > a {
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	position: relative;
+	display: flex;
+	transition: all 0.4s ease;
+	padding: 0px 13px;
+	background-color: #f0e8ff;
+	border-left: 0px;
+	color: #4b505a;
+	font-size: 15px;
+}
+.tab > ul > li > a:hover {
+	background-color: #dfd0fb;
+	color: #000;
+}
+.tab > ul > li:first-child > a {
+	margin-left: 0px;
+	margin-right: -1px;
+}
+.tab > ul > li > a span {
+	display: table-cell;
+	vertical-align: middle;
+	height: 45px;
+}
+.tab > ul > li.on > a {
+	background-color: #8d63d9;
+	color: white;
+	border-color: #8d63d9;
+}
+
+/* LINE TAB */
+.line-tab {
+	border-collapse: collapse;
+	padding: 0px;
+	position: relative;
+}
+.line-tab > ul {
+	border-top: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+}
+.line-tab > ul:before {
+	content: "";
+	display: block;
+	z-index: 1;
+	bottom: 0px;
+}
+.line-tab > ul > li {
+	position: relative;
+	border-bottom: 0px;
+	border-left: 1px solid #d7d7d7;
+	height: 55px;
+}
+.line-tab > ul > li:first-child {
+}
+.line-tab > ul > li > a {
+	border: 0px !important;
+	background-color: #fff;
+	height: 56px;
+}
+.line-tab > ul > li > a:before,
+.line-tab > ul > li > a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+}
+.line-tab > ul > li > a:before {
+	border-top-width: 1px;
+	border-left-width: 1px;
+	bottom: 0px;
+	left: -1px;
+	padding-top: 0px;
+	z-index: 1;
+}
+.line-tab > ul > li > a:after {
+	z-index: 2;
+	top: -1px;
+	padding-top: 0px;
+	right: -1px;
+	border-right-width: 1px;
+}
+.line-tab > ul > li.on:before {
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid #fff;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+}
+.line-tab > ul > li.on > a {
+	z-index: 2;
+	border-bottom-color: #fff;
+	color: #8d63d9;
+	font-weight: 500;
+	background-color: transparent;
+}
+.line-tab > ul > li.on > a:before,
+.line-tab > ul > li.on > a:after {
+	transition: 0.3s all ease;
+}
+.line-tab > ul > li.on a:before {
+	border-color: #8d63d9;
+	transition: border-color 0s, width 0.3s, height 0.3s;
+	width: 100%;
+	height: 100%;
+}
+.line-tab > ul > li.on a:after {
+	transition: border-color 0s, width 0.3s, height 0.4s, padding 0.3s;
+	width: 100%;
+	padding-top: 2px;
+	height: 98%;
+	border-color: #8d63d9;
+	transition-delay: 0s, 0s, 0.4s, 0.4s;
+}
+.line-tab > ul > li.on a:before {
+	transition-delay: 0s, 0.2s, 0s;
+}
+.line-tab > ul > li:hover a span {
+	color: #000;
+}
+
+/*TAB CONTENT*/
+.tab-contents {
+	padding: 35px 0;
+}
+.tab-contents .tab-content {
+	display: none;
+}
+.tab-contents .tab-content.on,
+.tab-contents .tab-content.active {
+	display: block;
+}
